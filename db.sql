@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS mahasiswa;
+USE mahasiswa;
+
+CREATE TABLE IF NOT EXISTS biodata (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    npm VARCHAR(16) NOT NULL,
+    nama VARCHAR(35) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    tgllahir DATE NOT NULL,
+    kelas VARCHAR(10) NOT NULL,
+    aktiv BOOLEAN NOT NULL
+);
